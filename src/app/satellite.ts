@@ -13,4 +13,8 @@ orbitType: string;
 type: string;
 operational: boolean;
 launchDate: string;
+shouldShowWarning (): boolean {
+    if(this.type.toLowerCase () == "space debris") return true;
+    else return false;
+}
 }
